@@ -131,33 +131,33 @@ main p {
 }
 
 .fever_img {
-    background-image: url("img/fever.png");
+    background-image: url("./img/fever.png");
 }
 
 .chills_img {
-    background-image: url("img/chills.png");
+    background-image: url("./img/chills.png");
 }
 
 .rash_img {
-    background-image: url("img/rash.png");
+    background-image: url("./img/rash.png");
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 }
 
 .night_sweats_img {
-    background-image: url("img/night_sweats.png");
+    background-image: url("./img/night_sweats.png");
 }
 
 .sore_throat_img {
-    background-image: url("img/sore_throat.png");
+    background-image: url("./img/sore_throat.png");
 }
 
 .fatigue_img {
-    background-image: url("img/fatigue.png");
+    background-image: url("./img/fatigue.png");
 }
 
 .mouth_ulcers_img {
-    background-image: url("img/mouth_ulcers.png");
+    background-image: url("./img/mouth_ulcers.png");
 }
 
 

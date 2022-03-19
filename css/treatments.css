@@ -124,7 +124,7 @@ main section {
 .treat_article_img {
     grid-column: 3;
     grid-row: 1;
-    background-image: url("/css/img/treatment_img.png");
+    background-image: url("./css/img/treatment_img.png");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: auto 100%;
