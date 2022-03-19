@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--description  as test text-->
+    <meta name="description" content="This is a website to explain HIV and how you can live normal life with it">
+    <!--keywords -->
+    <meta name="keywords" content="HIV awareness">
+    <!--author this is me-->
+    <meta name="author" content="FB Arias">
+    <!--styling-->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/topnav.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <!--author this is me-->
+    <meta name="author" content="FB Arias">
+    <!-- handlebars -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.js" integrity="sha512-c7SfJeKRl8g7wgL+zMGX78faYVGp+NZVQ587mRLrqeLySX/qHCQOKw/iZ5Pp64DaPjvedixWC/Fe73upnhBaRA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>U=U</title>
+</head>
+
+<body>
+    <div class="grid-container-index">
+        <header class="topnav">
+            <div class="container container_nav">
+                <!--logo-->
+                <a class="logo" href="index.html">U=U</a>
+                <!--ham menu responsive-->
+                <input type="checkbox" id="nav_toggle" class="nav_toggle">
+                <!--nav menu-->
+                <nav class="topnav_nav">
+                    <ul class="nav_links">
+                        <li><a href="#section_2" class="nav_item">ABOUT</a></li>
+                        <li><a href="symptoms.html" class="nav_item">SYMPTOMS</a></li>
+                        <li><a href="FAQs.html" class="nav_item">FAQs</a></li>
+                        <li><a href="treatments.html" class="nav_item">TREATMENTS</a></li>
+                        <li><a href="get_tested.html" class="nav_item">GET TESTED</a></li>
+
+                    </ul>
+                </nav>
+                <!--ham menu responsive labels and shape-->
+                <label for="nav_toggle" id="burguer" class="burguer">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </label>
+            </div>
+            <!--container-->
+        </header>
+        <div class="section-container">
+            <button id="prev" class="prev_button">
+                <img src="/css/img/arrow.svg" alt="prev">
+            </button>
+            <section class="slider section_1 section_block">
+                <div class="slide poster_1_bg poster_grid show">
+                    <h1>Undetectable = Untransmittable</h1>
+                </div>
+                <div class="slide poster_2_bg poster_grid">
+                    <ul>
+                        <li>
+                            <h1>"HIV does not make people</br>dangerous to know, so you</br>can shake their hands and</br>give them a hug: Heaven</br>knows they need it.”</h1>
+                        </li>
+                        <li>
+                            <p>-Princess Diana</p>
+                        </li>
+                    </ul>
+                    <div class="poster_2_bg_img"></div>
+                </div>
+                <div class="slide poster_3_bg poster_grid">
+                    <ul>
+                        <li>Destigmatize</li>
+                        <li>Modernize</li>
+                        <li>Humanize</li>
+                    </ul>
+                    <div class="poster_3_bg_img"></div>
+                </div>
+                <div class="slide poster_4_bg poster_grid">
+                    <video class="poster_4_bg_video" autoplay loop muted src="/css/img/video.mp4"></video>
+                </div>
+            </section>
+            <button id="next" class="next_button">
+                <img src="/css/img/arrow.svg" alt="next">
+            </button>
+            <section id="section_2" class="section_2 fade-in section_article_container section_block">
+                <img src="css/img/virus.svg" alt="virus">
+                <ul>
+                    <li>
+                        <h1>About HIV</h1>
+                    </li>
+                    <li>
+                        <p>
+                            HIV (human immunodeficiency virus) is a virus that attacks the body’s immune system. If HIV is not treated, it can lead to AIDS (acquired immunodeficiency syndrome).
+                        </p>
+                    </li>
+                    <li>
+                        <p>There is currently no effective cure. Once people get HIV, they have it for life.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            But with proper medical care, HIV can be controlled. People with HIV who get effective HIV treatment can live long, healthy lives and protect their partners.
+                        </p>
+                    </li>
+                </ul>
+            </section>
+            <section id="section_3" class="section_3 fade-in section_article_container section_block">
+                <ul>
+                    <li>
+                        <h1>Where did HIV come from?</h1>
+                    </li>
+                    <li>
+                        <p>HIV infection in humans came from a type of chimpanzee in Central Africa.</p>
+                    </li>
+                    <li>
+                        <p>The chimpanzee version of the virus (called simian immunodeficiency virus, or SIV) was probably passed to humans when humans hunted these chimpanzees for meat and came in contact with their infected blood. </p>
+                    </li>
+                    <li>
+                        <p>
+                            Studies show that HIV may have jumped from chimpanzees to humans as far back as the late 1800s.
+                        </p>
+                    </li>
+                </ul>
+                <img src="css/img/monkey.svg" alt="monkey">
+            </section>
+            <section class="section_4 section_4_item section_article_container section_block">
+                <section class="section_4_1 fade-in section_4_card">
+                    <div class="section_4_1_img"></div>
+                    <h1>HIV Testing</h1>
+                    <p>The only way to know for sure whether you have HIV is to get tested.</p>
+                    <a href="/get_tested.html">Learn more</a>
+                </section>
+                <section class="section_4_2 fade-in section_4_card">
+                    <div class="section_4_2_img"></div>
+                    <h1>About symptoms </h1>
+                    <p>Some people have flu-like symptoms within 2 to 4 weeks after infection</p>
+                    <a href="/symptoms.html">Learn more</a>
+                </section>
+                <section class="section_4_3 fade-in section_4_card">
+                    <div class="section_4_3_img"></div>
+                    <h1>News!</h1>
+                    <p>Moderna started human trials for its revolutionary HIV</p>
+                    <a href="https://www.lgbtqnation.com/2021/08/moderna-starts-human-trials-revolutionary-hiv-vaccine-week/">Learn more</a>
+                </section>
+            </section>
+            <section class="section_5_newsletter fade-in section_article_container section_block">
+                <div class="section_5_img"></div>
+                <div class="section_5_content">
+                    <h1>Join our Newsletter!</h1>
+                    <h2>Receive the latest news about HIV.</h2>
+                    <form action="">
+                        <input class="section_5_form" type="text" name="name" placeholder="Enter your name">
+                        <input class="section_5_form" type="text" name="email" placeholder="Enter your email">
+                        <button>Submit</button>
+                    </form>
+
+
+                </div>
+            </section>
+        </div>
+        <footer class="footer footer_list">
+            <section class="footer_list_item">
+                <div class="footer_list_content">
+                    <a href="/pages/symptoms.html">
+                        <h1>Symptoms</h1>
+                    </a>
+                    <a href="#section_2">About HIV</a>
+                    <p>Fever, chills and more</p>
+                </div>
+            </section>
+
+            <section class="footer_list_item">
+                <div class="footer_list_content">
+                    <a href="/pages/get_tested.html">
+                        <h1>Get tested</h1>
+                    </a>
+                    <p>Do you want to get tested?</p>
+                </div>
+            </section>
+            <section class="footer_list_item">
+                <div class="footer_list_content">
+                    <a href="/pages/FAQs.html">
+                        <h1>FAQs</h1>
+                    </a>
+                    <a href="section_3">What is U=U?</a>
+                </div>
+
+            </section>
+            <section class="footer_list_item">
+                <div class="footer_list_content">
+                    <a href="/pages/treatments.html">
+                        <h1>Treatments</h1>
+                    </a>
+                    <p>Start treatment</p>
+                </div>
+            </section>
+            <section class="footer_list_item_logo">
+                <div class="footer_logo"></div>
+            </section>
+        </footer>
+    </div>
+    <script src="/scripts/main.js"></script>
+</body>
+
+</html>

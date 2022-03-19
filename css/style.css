@@ -1,0 +1,140 @@
+/*set up*/
+
+html {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    color: var(--text-color);
+    scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+/*fonts*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*variables*/
+
+:root {
+    /* fonts */
+    --global-h1-size-section: clamp(1.3rem, 1.1333rem + 0.7407vw, 1.8rem);
+    --global-h1-big: clamp(1.8rem, 1.7333rem + 0.2963vw, 2rem);
+    --global-h1-size: clamp(1.3rem, 1.1333rem + 0.7407vw, 1.8rem);
+    --global-p-big: clamp(1.2rem, 0.8000rem + 0.4444vw, 1.4rem);
+    --global-p-size: clamp(0.9rem, 0.8000rem + 0.4444vw, 1.2rem);
+    /* gradient effect navbar */
+    --gradient: radial-gradient(100% 108.46% at 100% 49.7%, #1D3557 37.69%, #F1FAEE 54.17%, #1D3557 73.28%);
+    /*grid*/
+    --margin-general: minmax(4em, 10vw);
+    --section-1-gap: 2rem;
+    /*color palette*/
+    --color-10: #E63946;
+    --color-30: #1D3557;
+    --color-60: #457B9D;
+    --color-80: #A8DADC;
+    --color-bg: #F1FAEE;
+    --color-white: #F4F4F4;
+    --color-black: #37373B;
+    /* gradients */
+    --grad-blue: radial-gradient(52.88% 155.77% at 50% 22.05%, #F1FAEE 0%, #A8DADC 100%);
+    --grad-pink: radial-gradient(106.05% 207.06% at 48.41% 56.18%, #F1FAEE 0%, #DBBDD1 100%);
+    --grad-yellow: radial-gradient(112.25% 318.71% at 50% 63.85%, #F1FAEE 0%, #DBD091 100%);
+    --grad-dark-green: radial-gradient(82.38% 157.22% at 78.27% -9.87%, #F1FAEE 0%, #5E8D8F 100%);
+    --grad-green: radial-gradient(107.57% 159.68% at 50% 63.85%, #F1FAEE 0%, #5E8D8F 100%);
+    --grad-lilac: radial-gradient(51.66% 89.46% at 48.34% 50%, #F1FAEE 0%, #D4D5FA 100%);
+    /* border */
+    --border-section-1: 0.5px solid rgba(29, 53, 87, 0.1);
+    /* buttons */
+    --button-bg-color: transparent;
+    --button-border: 1px solid #1D3557;
+    --button-radius: 5px;
+    /* nav border */
+    --nav-border: 0px solid rgba(29, 53, 87, 0.05);
+    --nav-shadow: 0px 0px 2px rgba(29, 53, 87, 0.2);
+    /*layout edits*/
+    --opacity: 0px;
+    --layout--background--color: rgba(237, 225, 255, 0);
+    --main-bg-responsive: rgb(151, 255, 142);
+    --border-color: #ff4ee1;
+    /*colors i have to get rid off*/
+    --text-color: #ffffff;
+    --border-color: #a658da;
+    --text-color-hover: #ffd3d3;
+    --border-color-nav: #ffffff;
+}
+
+
+/*index.html*/
+
+.grid-container-index {
+    display: grid;
+    grid-template-columns: var(--margin-general) repeat(10, 1fr) var(--margin-general);
+    grid-template-rows: auto;
+    border: var(--opacity) solid var(--main-color);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: var(--margin-general) repeat(10, 1fr) var(--margin-general);
+    grid-template-rows: auto;
+    border: var(--opacity) solid var(--main-color);
+}
+
+.fa {
+    color: black;
+    font-size: 54px;
+}
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+}
+
+.appear {
+    opacity: 1;
+}
+
+
+/* youtube video */
+
+.frameyt {
+    position: relative;
+    overflow: hidden;
+    width: 90%;
+    padding-top: 56.25%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3em;
+}
+
+.responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    /* decor */
+    filter: drop-shadow(0px 0px 15px rgba(29, 53, 87, 0.24));
+}
+
+@media (max-width: 800px) {
+     :root {
+        --margin-general: 1em;
+    }
+}

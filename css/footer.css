@@ -1,0 +1,102 @@
+.footer {
+    position: relative;
+    grid-column: 2 / 12;
+    height: 140px;
+    box-sizing: border-box;
+    background: transparent;
+    border-top: var(--nav-border);
+    border: var(--opacity) solid var(--border-color);
+    display: grid;
+    grid-template-columns: var(--margin-general) repeat(10, 1fr) var(--margin-general);
+}
+
+.footer_list {
+    display: flex;
+    justify-content: space-around;
+    border: var(--opacity) solid var(--border-color);
+}
+
+.footer_list_item {
+    display: inline-block;
+    width: 25%;
+    padding: 1vh 0vw;
+    flex-direction: row;
+    border: var(--opacity) solid var(--border-color);
+}
+
+.footer_list_content {
+    width: 70%;
+    display: flex;
+    margin: auto;
+    padding: 1vh 0vw;
+    flex-direction: column;
+    justify-content: space-around;
+    border: var(--opacity) solid var(--border-color);
+}
+
+.footer_list_content h1 {
+    color: var(--color-30);
+    font-size: 18px;
+    text-align: left;
+}
+
+.footer_list_content a,
+.footer_list_content p {
+    padding: 1%;
+    color: var(--color-30);
+    font-size: 14px;
+    text-align: left;
+    line-height: 20px;
+}
+
+.footer_list_item_logo {
+    width: 25%;
+    padding: 2vh 2vw;
+    border: var(--opacity) solid var(--main-color);
+}
+
+.footer_logo {
+    padding: 0;
+    background-image: url("/css/img/Logo.svg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: auto;
+    border: var(--opacity) solid var(--border-color);
+}
+
+
+/* Responsive layout - makes a one column layout instead of a two-column layout */
+
+@media (max-width: 800px) {
+    .footer {
+        height: 100%;
+        border: var(--opacity) solid var(--main-bg-responsive);
+    }
+    .footer_list {
+        align-items: center;
+        flex-direction: column;
+        border: var(--opacity) solid var(--main-bg-responsive);
+    }
+    .footer_list_item {
+        width: 60%;
+        padding: 4%;
+        border: var(--opacity) solid var(--main-bg-responsive);
+    }
+    .footer_list_item_logo {
+        width: 100%;
+        padding: 2%;
+        border: var(--opacity) solid var(--main-bg-responsive);
+    }
+    .footer_logo {
+        height: 10vh;
+        width: 100%;
+        border: var(--opacity) solid var(--main-bg-responsive);
+    }
+    .footer_list_content {
+        width: 100%;
+        padding: 1% 1%;
+        border: var(--opacity) solid var(--main-bg-responsive);
+    }
+}
