@@ -1,0 +1,273 @@
+body {
+    background: linear-gradient(180deg, #F1FAEE 50%, #A8DADC 100%);
+    background-attachment: fixed;
+}
+
+.symp_h1 {
+    grid-column: 2/12;
+    grid-row: 2;
+    color: var(--color-30);
+    border: var(--opacity) solid var(--border-color);
+    padding: 3vh 0vw;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: var(--global-h1-size-section);
+}
+
+main {
+    grid-column: 2/12;
+    grid-row: 3;
+    /* creating layout */
+    display: grid;
+    grid-template-columns: 70% 30%;
+    /* font */
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: var(--global-p-size);
+    line-height: 25px;
+    color: var(--color-30);
+    /* decor */
+    padding: 2% 2%;
+    background: var(--grad-pink);
+    border-radius: 20px;
+    border: var(--opacity) solid var(--border-color);
+}
+
+main p {
+    grid-column: 2;
+    border: var(--opacity) solid var(--border-color);
+    height: fit-content;
+    /*center vertically*/
+    margin: auto;
+}
+
+.symp_end {
+    display: grid;
+    /* grid */
+    grid-column: 2/12;
+    grid-row: 5;
+    /* layout */
+    border: var(--opacity) solid var(--border-color);
+    /* decor */
+    border-radius: 20px;
+    background: var(--grad-pink);
+    padding: 4vh 2vw;
+    margin-top: var(--section-1-gap);
+    margin-bottom: var(--section-1-gap);
+}
+
+.symp_end_text {
+    grid-column: 1/10;
+    grid-row: 5;
+    /* font */
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: var(--global-p-size);
+}
+
+.symp_end li {
+    border: var(--opacity) solid var(--border-color);
+    color: var(--color-30);
+    padding-bottom: 1.4em;
+}
+
+.symp_end h2 {
+    font-size: var(--global-p-size);
+}
+
+.symp_end li:nth-child(1) {
+    margin-bottom: 10px;
+    border: var(--opacity) solid var(--border-color);
+}
+
+
+/* youtube video */
+
+.frameyt {
+    grid-column: 1;
+    margin: auto auto;
+    border: var(--opacity) solid var(--border-color);
+}
+
+
+/* layout */
+
+.section-container {
+    grid-column: 2/12;
+    grid-row: 4;
+    display: flex;
+    flex-direction: column;
+    gap: var(--section-1-gap);
+    margin-top: var(--section-1-gap);
+}
+
+.symp_card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 230px;
+    grid-row: 30em;
+    border-radius: 20px;
+    background: var(--grad-green);
+    border: var(--opacity) solid var(--border-color);
+    color: var(--color-30);
+}
+
+.fever_img,
+.rash_img,
+.sore_throat_img,
+.mouth_ulcers_img {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.chills_img,
+.night_sweats_img,
+.fatigue_img {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.fever_img {
+    background-image: url("./img/fever.png");
+}
+
+.chills_img {
+    background-image: url("./img/chills.png");
+}
+
+.rash_img {
+    background-image: url("./img/rash.png");
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.night_sweats_img {
+    background-image: url("./img/night_sweats.png");
+}
+
+.sore_throat_img {
+    background-image: url("./img/sore_throat.png");
+}
+
+.fatigue_img {
+    background-image: url("./img/fatigue.png");
+}
+
+.mouth_ulcers_img {
+    background-image: url("./img/mouth_ulcers.png");
+}
+
+
+/* regular */
+
+.symp_card_img,
+.symp_card_img_inverse {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    opacity: 0.7;
+    height: 100%;
+    width: 100%;
+    border: var(--opacity) solid var(--border-color);
+}
+
+.symp_card_img {
+    grid-column: 1;
+}
+
+.symp_card_img_inverse {
+    grid-column: 3;
+    grid-row: 1;
+}
+
+.symp_card_text,
+.symp_card_text_inverse {
+    grid-column: 2/4;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: var(--opacity) solid var(--border-color);
+}
+
+.symp_card_text {
+    grid-column: 2/4;
+}
+
+.symp_card_text_inverse {
+    grid-column: 1/3;
+}
+
+.symp_card_text h1,
+.symp_card_text_inverse h1 {
+    font-style: bold;
+    font-size: var(--global-h1-size);
+    padding: 1vh 3vw;
+    border: var(--opacity) solid var(--border-color);
+}
+
+.symp_card_text p,
+.symp_card_text_inverse p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: var(--global-p-size);
+    text-align: left;
+    padding: 3vh 3vw;
+    border: var(--opacity) solid var(--border-color);
+}
+
+@media (max-width: 800px) {
+    main p {
+        grid-column: 1 / 3;
+        grid-row: 2;
+        padding: 2% 0px;
+    }
+    .symp_card_img,
+    .symp_card_img_inverse {
+        display: grid;
+        grid-column: 1/4;
+        grid-row: 1;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        border: var(--opacity) solid var(--border-color);
+        z-index: 1;
+        opacity: 40%;
+    }
+    .symp_card_text,
+    .symp_card_text_inverse {
+        display: grid;
+        grid-column: 1/4;
+        grid-row: 1;
+        font-size: var(--global-p-size);
+        padding: 1em;
+        border: var(--opacity) solid var(--border-color);
+        z-index: 10;
+    }
+    /* youtube video */
+    .frameyt {
+        grid-column: 1/3;
+        width: 100%;
+    }
+    /* images */
+    .fever_img,
+    .rash_img,
+    .sore_throat_img,
+    .mouth_ulcers_img,
+    .chills_img,
+    .night_sweats_img,
+    .fatigue_img {
+        border-radius: 20px;
+    }
+    /* symptoms */
+    .section-container {
+        grid-row: 4;
+    }
+    /*  */
+    .symp_end {
+        grid-row: 5;
+    }
+}
