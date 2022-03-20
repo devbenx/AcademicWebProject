@@ -57,7 +57,7 @@
 
 .footer_logo {
     padding: 0;
-    background-image: url("../css/img/Logo.svg");
+    background-image: url("/css/img/Logo.svg");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
